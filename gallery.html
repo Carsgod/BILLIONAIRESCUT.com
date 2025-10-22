@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIlloniares Cut - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="gallery-loading.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Gallery Hero Section with Integrated Navigation -->
+    <section class="gallery-hero">
+        <!-- Navigation integrated into hero -->
+        <nav class="gallery-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-scissors"></i>
+                    <span>BILLIONAIRES CUT</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="pagesDropdown">
+                            Pages <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="about us.html" class="dropdown-item">About Us</a>
+                            <a href="index.html#trending" class="dropdown-item">Trending Styles</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="booknow.html" class="dropdown-item">Book Now</a>
+                            <a href="services.html#pricing" class="dropdown-item">Pricing</a>
+                            <span class="dropdown-item active">Gallery</span>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Services <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="services.html" class="dropdown-item">Our Services</a>
+                            <a href="styling.html" class="dropdown-item">Single Service</a>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="gallery-hero-content">
+            <h1 class="gallery-hero-title">GALLERY</h1>
+            <div class="gallery-title-underline"></div>
+        </div>
+    </section>
+
+    <!-- Sticky Navigation (appears after hero) -->
+    <nav class="sticky-nav" id="sticky-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-scissors"></i>
+                <span>BILLIONAIRES CUT</span>
+            </div>
+            <div class="nav-menu" id="sticky-nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Pages <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="about us.html" class="dropdown-item">About Us</a>
+                        <a href="index.html#trending" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                        <a href="booknow.html" class="dropdown-item">Book Now</a>
+                        <a href="services.html#pricing" class="dropdown-item">Pricing</a>
+                        <span class="dropdown-item active">Gallery</span>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="services.html" class="nav-link dropdown-toggle" id="servicesDropdown">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="services.html" class="dropdown-item">Our Services</a>
+                        <a href="styling.html" class="dropdown-item">Single Service</a>
+                    </div>
+                </div>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="sticky-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery 1.jpeg" alt="Barber working on client">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpeg" alt="Barber cutting hair">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 3.jpeg" alt="Barber styling client">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 4.jpeg" alt="Barber shop interior">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery5.jpeg" alt="Haircut in progress">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 6.jpeg" alt="Professional barber work">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery7.jpeg" alt="Barber tools and equipment">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery9.jpeg" alt="Professional barber styling">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 10.jpeg" alt="Expert barber techniques">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-container">
+            <!-- Close button -->
+            <button class="lightbox-close" aria-label="Close lightbox">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Previous button -->
+            <button class="lightbox-prev" aria-label="Previous image">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Next button -->
+            <button class="lightbox-next" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Image container -->
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="" alt="" class="lightbox-image">
+            </div>
+
+            <!-- Image counter -->
+            <div class="lightbox-counter">
+                <span id="current-number">1</span>
+                <span class="separator">/</span>
+                <span id="total-number">7</span>
+            </div>
+
+            <!-- Loading spinner -->
+            <div class="lightbox-loading">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <i class="fas fa-scissors"></i>
+                        <span>BILLIONAIRES CUT</span>
+                    </div>
+                    <p>Premium barbershop experience showcasing our craftsmanship.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about us.html">About</a>
+                    <a href="index.html#team">Trending Styles</a>
+                    <a href="services.html">Services</a>
+                    <a href="haircut.html">Haircut</a>
+                    <a href class="active">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-snapchat"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BILLIONAIRESCUT BARBERSHOP. All RIGHTS RESERVED.</p>
+                <p class="portfolio-credit">
+                    Built by <a href="https://carsgod.github.io/My-Portfolio.dev/" class="portfolio-link" target="_blank" rel="noopener noreferrer">Nana Kwesi</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+     <script src="gallery-loading.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

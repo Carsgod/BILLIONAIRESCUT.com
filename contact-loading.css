@@ -1,0 +1,214 @@
+/* Contact Page Loading Screen Styles */
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+}
+
+.loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loading-container {
+    text-align: center;
+    position: relative;
+}
+
+.loading-logo {
+    margin-bottom: 2rem;
+    animation: logoPulse 2s ease-in-out infinite;
+}
+
+.loading-logo i {
+    font-size: 4rem;
+    color: #E8A75B;
+    text-shadow: 0 0 20px rgba(232, 167, 91, 0.5);
+}
+
+.loading-logo-text {
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: #E8A75B;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    text-shadow: 0 2px 10px rgba(232, 167, 91, 0.3);
+}
+
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.spinner-dot {
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(45deg, #E8A75B, #b86507);
+    border-radius: 50%;
+    animation: dotBounce 1.4s ease-in-out infinite both;
+    box-shadow: 0 2px 8px rgba(232, 167, 91, 0.3);
+}
+
+.spinner-dot:nth-child(1) { animation-delay: -0.32s; }
+.spinner-dot:nth-child(2) { animation-delay: -0.16s; }
+.spinner-dot:nth-child(3) {
+    animation-delay: 0s;
+    background: #b86507;
+}
+.spinner-dot:nth-child(4) { animation-delay: 0.16s; }
+.spinner-dot:nth-child(5) { animation-delay: 0.32s; }
+.spinner-dot:nth-child(6) { animation-delay: 0.48s; }
+.spinner-dot:nth-child(7) { animation-delay: 0.64s; }
+.spinner-dot:nth-child(8) { animation-delay: 0.80s; }
+.spinner-dot:nth-child(9) { animation-delay: 0.96s; }
+.spinner-dot:nth-child(10) { animation-delay: 1.12s; }
+.spinner-dot:nth-child(11) { animation-delay: 1.28s; }
+.spinner-dot:nth-child(12) { animation-delay: 1.44s; }
+
+.loading-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    opacity: 0.8;
+    animation: textPulse 2s ease-in-out infinite;
+}
+
+.loading-progress {
+    width: 200px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 2rem auto 0;
+    border-radius: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loading-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #E8A75B, transparent);
+    animation: progressShine 2s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes logoPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+@keyframes dotBounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes textPulse {
+    0%, 100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+
+@keyframes progressShine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .loading-logo i {
+        font-size: 3rem;
+    }
+
+    .loading-logo-text {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    .loading-text {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .loading-progress {
+        width: 150px;
+    }
+
+    .spinner-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loading-logo i {
+        font-size: 2.5rem;
+    }
+
+    .loading-logo-text {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .loading-text {
+        font-size: 0.9rem;
+    }
+
+    .loading-progress {
+        width: 120px;
+    }
+}
+
+/* Fade out transition */
+.loading-screen.fade-out {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .loading-screen {
+        background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
+    }
+}

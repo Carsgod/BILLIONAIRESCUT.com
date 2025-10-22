@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK NOW - BILLIONAIRES CUT</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="booknow-loading.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Gallery Hero Section with Integrated Navigation -->
+    <section class="gallery-hero">
+        <!-- Navigation integrated into hero -->
+        <nav class="gallery-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-scissors"></i>
+                    <span>BILLIONAIRES CUT</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="pagesDropdown">
+                            Pages <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="about us.html" class="dropdown-item">About Us</a>
+                            <a href="index.html#trending" class="dropdown-item">Trending Styles</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <span class="dropdown-item active">Book Now</span>
+                            <a href="services.html#pricing" class="dropdown-item">Pricing</a>
+                            <a href="gallery.html" class="dropdown-item">Gallery</a>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Services <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="services.html" class="dropdown-item">Our Services</a>
+                            <a href="styling.html" class="dropdown-item">Single Service</a>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="gallery-hero-content">
+            <h1 class="gallery-hero-title">BOOK NOW</h1>
+            <div class="gallery-title-underline"></div>
+        </div>
+    </section>
+
+    <!-- Sticky Navigation (appears after hero) -->
+    <nav class="sticky-nav" id="sticky-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-scissors"></i>
+                <span>BILLIONAIRES CUT</span>
+            </div>
+            <div class="nav-menu" id="sticky-nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Pages <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="about us.html" class="dropdown-item">About Us</a>
+                        <a href="index.html#trending" class="dropdown-item">Trending Styles</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                        <a href="booknow.html" class="dropdown-item active">Book Now</a>
+                        <a href="services.html#pricing" class="dropdown-item">Pricing</a>
+                        <a href="gallery.html" class="dropdown-item">Gallery</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="services.html" class="dropdown-item">Our Services</a>
+                        <a href="styling.html" class="dropdown-item">Single Service</a>
+                    </div>
+                </div>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <a href="#booking-form" class="btn btn-primary nav-cta">Book Now</a>
+            </div>
+            <div class="nav-toggle" id="sticky-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Selection Section -->
+    <section class="booking-services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Services</h2>
+                <p class="section-description">
+                    Select from our premium grooming services
+                </p>
+            </div>
+
+            <!-- Services Categories Container -->
+            <div class="services-categories-row">
+                <!-- Haircuts Section -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <h3 class="category-title">HAIRCUTS</h3>
+                    </div>
+                    <div class="service-options">
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="regular-haircut" data-price="120">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Regular Haircut</span>
+                                <span class="service-price">₵120</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="scissors-haircut" data-price="100">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Scissors Haircut</span>
+                                <span class="service-price">₵100</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="kids-haircut" data-price="80">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Kids Haircut</span>
+                                <span class="service-price">₵80</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="head-shave" data-price="60">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Head Shave</span>
+                                <span class="service-price">₵60</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Facial Section -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <h3 class="category-title">SHAVE</h3>
+                    </div>
+                    <div class="service-options">
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="head-shave" data-price="60">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Head Shave</span>
+                                <span class="service-price">₵60</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="royal-shave" data-price="140">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Royal Shave</span>
+                                <span class="service-price">₵140</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="royal-head-shave" data-price="180">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Royal Head Shave</span>
+                                <span class="service-price">₵180</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="beard-trim-no-shave" data-price="80">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Beard Trim No Shave</span>
+                                <span class="service-price">₵80</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="beard-trim-shave" data-price="120">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Beard Trim Shave</span>
+                                <span class="service-price">₵120</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="beard-shave-up" data-price="100">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Beard Shave Up</span>
+                                <span class="service-price">₵100</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Facial Section -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <h3 class="category-title">FACIAL</h3>
+                    </div>
+                    <div class="service-options">
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="deep-pore-cleansing" data-price="160">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Deep Pore Cleansing</span>
+                                <span class="service-price">₵160</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="aromatherapy-facial" data-price="180">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Aromatherapy Facial</span>
+                                <span class="service-price">₵180</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="acne-problem-facial" data-price="140">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Acne Problem Facial</span>
+                                <span class="service-price">₵140</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="european-facial" data-price="200">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">European Facial</span>
+                                <span class="service-price">₵200</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="glycolic-peel-facial" data-price="220">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Glycolic Peel Facial</span>
+                                <span class="service-price">₵220</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Package Section -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <h3 class="category-title">PACKAGE</h3>
+                    </div>
+                    <div class="service-options">
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="haircut-shave" data-price="250">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Haircut + Shave</span>
+                                <span class="service-price">₵250</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="haircut-beard-trim" data-price="280">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Haircut + Beard Trim</span>
+                                <span class="service-price">₵280</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="haircut-beard-trim-shave" data-price="320">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Haircut + Beard Trim Shave</span>
+                                <span class="service-price">₵320</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="service" value="haircut-beard-shape-up" data-price="260">
+                            <span class="checkmark"></span>
+                            <div class="service-info">
+                                <span class="service-name">Haircut + Beard Shape Up</span>
+                                <span class="service-price">₵260</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Date & Time Selection Section -->
+    <section class="booking-datetime" id="datetime">
+        <div class="container">
+            <div class="datetime-grid">
+                <!-- Date Selection -->
+                <div class="date-selection">
+                    <div class="section-header">
+                        <h2 class="section-title">Select Date</h2>
+                    </div>
+                    <div class="date-picker">
+                        <input type="date" id="booking-date" class="date-input" min="">
+                        <div class="date-display">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Choose your preferred date</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time Selection -->
+                <div class="time-selection">
+                    <div class="section-header">
+                        <h2 class="section-title">Select Time</h2>
+                    </div>
+                    <div class="time-slots">
+                        <div class="time-slot" data-time="08:00">8:00 AM</div>
+                        <div class="time-slot" data-time="09:00">9:00 AM</div>
+                        <div class="time-slot" data-time="10:00">10:00 AM</div>
+                        <div class="time-slot" data-time="11:00">11:00 AM</div>
+                        <div class="time-slot" data-time="12:00">12:00 PM</div>
+                        <div class="time-slot" data-time="13:00">1:00 PM</div>
+                        <div class="time-slot" data-time="14:00">2:00 PM</div>
+                        <div class="time-slot" data-time="15:00">3:00 PM</div>
+                        <div class="time-slot" data-time="16:00">4:00 PM</div>
+                        <div class="time-slot" data-time="17:00">5:00 PM</div>
+                        <div class="time-slot" data-time="18:00">6:00 PM</div>
+                        <div class="time-slot" data-time="19:00">7:00 PM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Details & Booking Form -->
+    <section class="booking-form-section" id="booking-form">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Your Details</h2>
+                <p class="section-description">
+                    Please provide your information to complete the booking
+                </p>
+            </div>
+
+            <div class="booking-form-container">
+                <form class="booking-form" id="customer-booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="customer-name" class="form-label">Full Name *</label>
+                            <input type="text" id="customer-name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="customer-phone" name="phone" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="customer-email" class="form-label">Email Address *</label>
+                            <input type="email" id="customer-email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-service" class="form-label">Preferred Service</label>
+                            <select id="customer-service" name="service" class="form-input">
+                                <option value="">Select a service</option>
+                                <option value="regular-haircut">Regular Haircut - ₵120</option>
+                                <option value="scissors-haircut">Scissors Haircut - ₵100</option>
+                                <option value="kids-haircut">Kids Haircut - ₵80</option>
+                                <option value="head-shave">Head Shave - ₵60</option>
+                                <option value="royal-shave">Royal Shave - ₵140</option>
+                                <option value="royal-head-shave">Royal Head Shave - ₵180</option>
+                                <option value="beard-trim-no-shave">Beard Trim No Shave - ₵80</option>
+                                <option value="beard-trim-shave">Beard Trim Shave - ₵120</option>
+                                <option value="beard-shave-up">Beard Shave Up - ₵100</option>
+                                <option value="deep-pore-cleansing">Deep Pore Cleansing - ₵160</option>
+                                <option value="aromatherapy-facial">Aromatherapy Facial - ₵180</option>
+                                <option value="acne-problem-facial">Acne Problem Facial - ₵140</option>
+                                <option value="european-facial">European Facial - ₵200</option>
+                                <option value="glycolic-peel-facial">Glycolic Peel Facial - ₵220</option>
+                                <option value="haircut-shave">Haircut + Shave - ₵250</option>
+                                <option value="haircut-beard-trim">Haircut + Beard Trim - ₵280</option>
+                                <option value="haircut-beard-trim-shave">Haircut + Beard Trim Shave - ₵320</option>
+                                <option value="haircut-beard-shape-up">Haircut + Beard Shape Up - ₵260</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-requests" class="form-label">Special Requests (Optional)</label>
+                        <textarea id="special-requests" name="requests" class="form-textarea" rows="4" placeholder="Any specific requirements or preferences..."></textarea>
+                    </div>
+
+                    <div class="booking-summary">
+                        <h3>Booking Summary</h3>
+                        <div class="summary-item">
+                            <span class="summary-label">Selected Services:</span>
+                            <span class="summary-value" id="selected-services">None</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Date & Time:</span>
+                            <span class="summary-value" id="selected-datetime">Not selected</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span class="summary-label">Total Price:</span>
+                            <span class="summary-value" id="total-price">₵0</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary booking-submit-btn">
+                        CONFIRM BOOKING
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <i class="fas fa-scissors"></i>
+                        <span>BILLIONAIRES CUT</span>
+                    </div>
+                    <p>Premium barbershop experience for the modern gentleman.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about us.html">About</a>
+                    <a href="index.html#trending">Trending Styles</a>
+                    <a href="services.html">Services</a>
+                    <a href="haircut.html">Haircut</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-snapchat"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BILLIONAIRESCUT BARBERSHOP. All RIGHTS RESERVED.</p>
+                <p class="portfolio-credit">
+                    Built by <a href="https://carsgod.github.io/My-Portfolio.dev/" class="portfolio-link" target="_blank" rel="noopener noreferrer">Nana Kwesi</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+            <div class="spinner-dot"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- Embedded CSS for Back to Top Button -->
+    <style>
+    /* Back to Top Button */
+    .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: #E8A75B;
+        border: none;
+        border-radius: 8px;
+        color: #0a0a0a;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 10000;
+        box-shadow: 0 4px 12px rgba(232, 167, 91, 0.3);
+        text-decoration: none;
+    }
+
+    .back-to-top:hover {
+        background: #FFD700;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(232, 167, 91, 0.5);
+    }
+
+    .back-to-top.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .back-to-top i {
+        font-size: 1.8rem;
+        color: #0a0a0a;
+    }
+
+    /* Mobile responsiveness for back to top button */
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .back-to-top {
+            bottom: 15px;
+            right: 15px;
+            width: 45px;
+            height: 45px;
+            font-size: 1.2rem;
+        }
+    }
+    </style>
+
+    <!-- Embedded JavaScript for Back to Top Button -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Back to Top Button functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        if (backToTopBtn) {
+            console.log('Back to top button found, initializing...');
+
+            // Show/hide back to top button based on scroll position
+            function toggleBackToTopButton() {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            }
+
+            // Listen for scroll events to show/hide the button
+            window.addEventListener('scroll', toggleBackToTopButton);
+
+            // Initial check on page load
+            toggleBackToTopButton();
+        } else {
+            console.log('Back to top button not found on this page');
+        }
+    });
+
+    // Global function for back to top button
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+     <script src="booknow-loading.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
